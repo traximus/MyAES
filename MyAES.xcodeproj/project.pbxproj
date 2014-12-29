@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6BCE21D1A51493C00993B78 /* MyAES.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6BCE21C1A51493C00993B78 /* MyAES.h */; };
+		C6BCE21F1A51493C00993B78 /* MyAES.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE21E1A51493C00993B78 /* MyAES.m */; };
+		C6BCE2251A51493C00993B78 /* libMyAES.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BCE2191A51493C00993B78 /* libMyAES.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6BCE2261A51493C00993B78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6BCE2111A51493C00993B78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BCE2181A51493C00993B78;
+			remoteInfo = MyAES;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C6BCE2171A51493C00993B78 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				C6BCE21D1A51493C00993B78 /* MyAES.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C6BCE2191A51493C00993B78 /* libMyAES.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyAES.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BCE21C1A51493C00993B78 /* MyAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAES.h; sourceTree = "<group>"; };
+		C6BCE21E1A51493C00993B78 /* MyAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAES.m; sourceTree = "<group>"; };
+		C6BCE2241A51493C00993B78 /* MyAESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAESTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BCE22A1A51493C00993B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6BCE2161A51493C00993B78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BCE2211A51493C00993B78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BCE2251A51493C00993B78 /* libMyAES.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6BCE2101A51493C00993B78 = {
+			isa = PBXGroup;
+			children = (
+				C6BCE21B1A51493C00993B78 /* MyAES */,
+				C6BCE2281A51493C00993B78 /* MyAESTests */,
+				C6BCE21A1A51493C00993B78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6BCE21A1A51493C00993B78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCE2191A51493C00993B78 /* libMyAES.a */,
+				C6BCE2241A51493C00993B78 /* MyAESTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6BCE21B1A51493C00993B78 /* MyAES */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCE21C1A51493C00993B78 /* MyAES.h */,
+				C6BCE21E1A51493C00993B78 /* MyAES.m */,
+			);
+			path = MyAES;
+			sourceTree = "<group>";
+		};
+		C6BCE2281A51493C00993B78 /* MyAESTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCE2291A51493C00993B78 /* Supporting Files */,
+			);
+			path = MyAESTests;
+			sourceTree = "<group>";
+		};
+		C6BCE2291A51493C00993B78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCE22A1A51493C00993B78 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6BCE2181A51493C00993B78 /* MyAES */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BCE22D1A51493C00993B78 /* Build configuration list for PBXNativeTarget "MyAES" */;
+			buildPhases = (
+				C6BCE2151A51493C00993B78 /* Sources */,
+				C6BCE2161A51493C00993B78 /* Frameworks */,
+				C6BCE2171A51493C00993B78 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyAES;
+			productName = MyAES;
+			productReference = C6BCE2191A51493C00993B78 /* libMyAES.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C6BCE2231A51493C00993B78 /* MyAESTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BCE2301A51493C00993B78 /* Build configuration list for PBXNativeTarget "MyAESTests" */;
+			buildPhases = (
+				C6BCE2201A51493C00993B78 /* Sources */,
+				C6BCE2211A51493C00993B78 /* Frameworks */,
+				C6BCE2221A51493C00993B78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6BCE2271A51493C00993B78 /* PBXTargetDependency */,
+			);
+			name = MyAESTests;
+			productName = MyAESTests;
+			productReference = C6BCE2241A51493C00993B78 /* MyAESTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6BCE2111A51493C00993B78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ifenglian;
+				TargetAttributes = {
+					C6BCE2181A51493C00993B78 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					C6BCE2231A51493C00993B78 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = C6BCE2141A51493C00993B78 /* Build configuration list for PBXProject "MyAES" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C6BCE2101A51493C00993B78;
+			productRefGroup = C6BCE21A1A51493C00993B78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6BCE2181A51493C00993B78 /* MyAES */,
+				C6BCE2231A51493C00993B78 /* MyAESTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6BCE2221A51493C00993B78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6BCE2151A51493C00993B78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BCE21F1A51493C00993B78 /* MyAES.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BCE2201A51493C00993B78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6BCE2271A51493C00993B78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6BCE2181A51493C00993B78 /* MyAES */;
+			targetProxy = C6BCE2261A51493C00993B78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C6BCE22B1A51493C00993B78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C6BCE22C1A51493C00993B78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6BCE22E1A51493C00993B78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C6BCE22F1A51493C00993B78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C6BCE2311A51493C00993B78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyAESTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C6BCE2321A51493C00993B78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyAESTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6BCE2141A51493C00993B78 /* Build configuration list for PBXProject "MyAES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BCE22B1A51493C00993B78 /* Debug */,
+				C6BCE22C1A51493C00993B78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BCE22D1A51493C00993B78 /* Build configuration list for PBXNativeTarget "MyAES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BCE22E1A51493C00993B78 /* Debug */,
+				C6BCE22F1A51493C00993B78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C6BCE2301A51493C00993B78 /* Build configuration list for PBXNativeTarget "MyAESTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BCE2311A51493C00993B78 /* Debug */,
+				C6BCE2321A51493C00993B78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6BCE2111A51493C00993B78 /* Project object */;
+}
