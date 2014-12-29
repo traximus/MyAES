@@ -10,6 +10,12 @@
 		C6BCE21D1A51493C00993B78 /* MyAES.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6BCE21C1A51493C00993B78 /* MyAES.h */; };
 		C6BCE21F1A51493C00993B78 /* MyAES.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE21E1A51493C00993B78 /* MyAES.m */; };
 		C6BCE2251A51493C00993B78 /* libMyAES.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BCE2191A51493C00993B78 /* libMyAES.a */; };
+		C6BCE24E1A514A1600993B78 /* aes_modes.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE2421A514A1600993B78 /* aes_modes.c */; };
+		C6BCE24F1A514A1600993B78 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE2431A514A1600993B78 /* aescrypt.c */; };
+		C6BCE2501A514A1600993B78 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE2441A514A1600993B78 /* aeskey.c */; };
+		C6BCE2511A514A1600993B78 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE2461A514A1600993B78 /* aestab.c */; };
+		C6BCE2521A514A1600993B78 /* igd_aes.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE24A1A514A1600993B78 /* igd_aes.c */; };
+		C6BCE2531A514A1600993B78 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = C6BCE24C1A514A1600993B78 /* md5.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +47,19 @@
 		C6BCE21E1A51493C00993B78 /* MyAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAES.m; sourceTree = "<group>"; };
 		C6BCE2241A51493C00993B78 /* MyAESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAESTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BCE22A1A51493C00993B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BCE2411A514A1600993B78 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		C6BCE2421A514A1600993B78 /* aes_modes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_modes.c; sourceTree = "<group>"; };
+		C6BCE2431A514A1600993B78 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		C6BCE2441A514A1600993B78 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		C6BCE2451A514A1600993B78 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		C6BCE2461A514A1600993B78 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		C6BCE2471A514A1600993B78 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		C6BCE2481A514A1600993B78 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		C6BCE2491A514A1600993B78 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		C6BCE24A1A514A1600993B78 /* igd_aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = igd_aes.c; sourceTree = "<group>"; };
+		C6BCE24B1A514A1600993B78 /* igd_aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = igd_aes.h; sourceTree = "<group>"; };
+		C6BCE24C1A514A1600993B78 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		C6BCE24D1A514A1600993B78 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +84,7 @@
 		C6BCE2101A51493C00993B78 = {
 			isa = PBXGroup;
 			children = (
+				C6BCE2331A51495900993B78 /* otherframeworks */,
 				C6BCE21B1A51493C00993B78 /* MyAES */,
 				C6BCE2281A51493C00993B78 /* MyAESTests */,
 				C6BCE21A1A51493C00993B78 /* Products */,
@@ -103,6 +123,34 @@
 				C6BCE22A1A51493C00993B78 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6BCE2331A51495900993B78 /* otherframeworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCE2401A514A1600993B78 /* IGD_AES_Crypto */,
+			);
+			path = otherframeworks;
+			sourceTree = "<group>";
+		};
+		C6BCE2401A514A1600993B78 /* IGD_AES_Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				C6BCE2411A514A1600993B78 /* aes.h */,
+				C6BCE2421A514A1600993B78 /* aes_modes.c */,
+				C6BCE2431A514A1600993B78 /* aescrypt.c */,
+				C6BCE2441A514A1600993B78 /* aeskey.c */,
+				C6BCE2451A514A1600993B78 /* aesopt.h */,
+				C6BCE2461A514A1600993B78 /* aestab.c */,
+				C6BCE2471A514A1600993B78 /* aestab.h */,
+				C6BCE2481A514A1600993B78 /* brg_endian.h */,
+				C6BCE2491A514A1600993B78 /* brg_types.h */,
+				C6BCE24A1A514A1600993B78 /* igd_aes.c */,
+				C6BCE24B1A514A1600993B78 /* igd_aes.h */,
+				C6BCE24C1A514A1600993B78 /* md5.c */,
+				C6BCE24D1A514A1600993B78 /* md5.h */,
+			);
+			path = IGD_AES_Crypto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6BCE2531A514A1600993B78 /* md5.c in Sources */,
+				C6BCE24E1A514A1600993B78 /* aes_modes.c in Sources */,
+				C6BCE2511A514A1600993B78 /* aestab.c in Sources */,
+				C6BCE2521A514A1600993B78 /* igd_aes.c in Sources */,
+				C6BCE24F1A514A1600993B78 /* aescrypt.c in Sources */,
 				C6BCE21F1A51493C00993B78 /* MyAES.m in Sources */,
+				C6BCE2501A514A1600993B78 /* aeskey.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +286,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ye ke (2PJMHX6P62)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -251,6 +306,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "c8ce7b8b-6a70-4d12-8429-8b6087f6d15c";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -272,6 +328,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ye ke (2PJMHX6P62)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -284,6 +341,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "c8ce7b8b-6a70-4d12-8429-8b6087f6d15c";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -292,8 +350,15 @@
 		C6BCE22E1A51493C00993B78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: ye ke (2PJMHX6P62)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/otherframeworks/iphoneos",
+					"$(PROJECT_DIR)/otherframeworks/iphonesimulator",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c8ce7b8b-6a70-4d12-8429-8b6087f6d15c";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -301,8 +366,15 @@
 		C6BCE22F1A51493C00993B78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: ye ke (2PJMHX6P62)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/otherframeworks/iphoneos",
+					"$(PROJECT_DIR)/otherframeworks/iphonesimulator",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c8ce7b8b-6a70-4d12-8429-8b6087f6d15c";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -356,6 +428,7 @@
 				C6BCE22F1A51493C00993B78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6BCE2301A51493C00993B78 /* Build configuration list for PBXNativeTarget "MyAESTests" */ = {
 			isa = XCConfigurationList;
@@ -364,6 +437,7 @@
 				C6BCE2321A51493C00993B78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
